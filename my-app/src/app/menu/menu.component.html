@@ -1,0 +1,12 @@
+<div id="mySidebar " *ngIf="a==2" class="sidebar" [ngClass]="[btnStyle]" (click)="closeNav()">
+    <button style="right: 0;" class="closebtn" [ngClass]="[btnStyle]" (click)="openNav()">
+        ×</button>
+    <button (click)="passData(1)">About</button>
+    <button (click)="passData(2)">Services</button>
+    <button (click)="passData(3)">Clients</button>
+    <button (click)="passData(4)">Contact</button>
+</div>
+
+<div id="main">
+    <button class="openbtn" *ngIf="a==1" [ngClass]="[btnStyle]" (click)="closeNav()">☰</button>
+</div>

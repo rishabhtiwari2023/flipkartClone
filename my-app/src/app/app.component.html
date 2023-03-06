@@ -1,0 +1,44 @@
+<div class="Dynamic d-flex flex-row">
+  <div class="menuBar"><app-menu (notify)="ParentMethod($event)"></app-menu></div>
+  <div class="otherComponent"><ng-container *ngComponentOutlet="say"></ng-container></div>
+</div>
+
+
+
+<!-- <button (click)="About()">about</button>
+<button (click)="Student()">student dta</button> -->
+<!-- <ng-container #container></ng-container>  -->
+<!-- <ul>
+    <li *ngFor="let person of people"> (1)
+      {{ person.name }}
+    </li>
+   </ul>
+
+   <hr>
+   <ul> (1)
+  <li *ngFor="let person of people; let i = index"> (1)
+    {{ i + 1 }} - {{ person.name }} (2)
+  </li>
+</ul> -->
+<!-- 2222222222222222222222 -->
+<!-- <h4>NgFor (grouped)</h4>
+ <ul *ngFor="let group of peopleByCountry"> (1)
+   <li>{{ group.country }}</li>
+   <ul>
+    <li *ngFor="let person of group.people"> (2)
+      {{ person.name }}
+    </li>
+   </ul>
+ </ul> -->
+<!-- 33333333333333333333333333333 -->
+<!-- <h4>NgIf</h4>
+<ul *ngFor="let person of people">
+  <li *ngIf="person.age < 30"> (1)
+  {{ person.name }} ({{ person.age }})
+  </li>
+</ul> -->
+<!-- 44444444444444444 -->
+<!-- <ul *ngFor="let person of people">
+  <li [ngStyle]="{'color':getColor(person.country)}"> {{ person.name }} ({{ person.country }}) (1)
+  </li>
+</ul> -->

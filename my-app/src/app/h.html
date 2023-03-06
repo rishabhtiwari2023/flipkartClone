@@ -1,0 +1,83 @@
+  <!-- <div>
+    <div id="info">
+      <div id="img1"><img src="chrome://favicon/size/64@1x/https://youtube.com/" height="200px" width="200px" alt=""></div>
+      <div id="studentInfo"> <Table>
+        <tr>
+          <td>Student Name</td><td>------------</td>
+        </tr>
+        <tr>
+          <td>Father Name</td><td>------------</td>
+        </tr>
+        <tr>
+          <td>Admissin Session</td><td>------------</td>
+        </tr>
+        <tr>
+          <td>Faculty Name</td><td>------------</td>
+        </tr>
+        <tr>
+          <td>Course Name</td><td>------------</td>
+        </tr>
+        <tr>
+          <td>Student Status</td><td>------------</td>
+        </tr>
+        
+
+      </Table></div>
+    </div>
+    <div>
+      <ul class="Basehead">
+        <button>Personal Details</button><button>Contact Details</button><button>Qualification</button>
+       <button>Document</button><button>Academic info</button> 
+      </ul>
+    </div>
+  </div> -->
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  </body>
+  <script>
+        data=[{StudentName:"rishabh",
+FatherNme:"Rahish tiwari",
+Admission:"2020",
+Faculty:"btech cse",
+Course:"engineering",
+StudentStatus:"active"},
+
+{StudentName:"yogesh",
+FatherNme:"Rahish tiwari",
+Admission:"2020",
+Faculty:"btech cse",
+Course:"engineering",
+StudentStatus:"active"}]
+// console.log(data[0].StudentName)
+index=9999;
+// sn=Object.keys(data);
+var input="yogesh";var toSearch = input.toLowerCase();
+// for(var i=0; i<data.length; i++) {
+//    if(data[i]==data[i].includes(toSearch)){
+//     flag=1;
+//    }
+// }
+
+for(var i=0; i<data.length; i++) {
+   if(toSearch==data[i].StudentName){
+    index=i;console.log(index) ;
+    console.log(data[i]);
+    
+   }
+}
+
+
+  </script>
+  </html>
