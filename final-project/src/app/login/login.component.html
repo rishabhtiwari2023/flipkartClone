@@ -1,0 +1,28 @@
+<div class="login-container">
+    <!-- https://www.youtube.com/watch?v=sv76HcgjLZM -->
+    <img class="film"
+        src="https://raw.githubusercontent.com/freelancer-surender/Angular---Zero-to-Hero/master/final-project/src/assets/images/film.png"
+        alt="" srcset="">
+    <div class="logo">Rotten Patatoes</div>
+    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quod quaerat qui necessitatibus
+        temporibus veniam optio nesciunt, facilis magnam quos doloremque sed delectus sit. Voluptatibus quis delectus
+        sunt repellendus
+        natus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laborum libero quod labore mollitia
+        minima necessitatibus, consectetur repellat vero corporis? Iure pariatur labore explicabo veniam. Praesentium
+        rem voluptatibus fugit nesciunt.
+    </div>
+    <div class="login-forn">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" #username>
+        </div>
+        <div class="form-group">
+            <label for="pword">password</label>
+            <input type="text" name="pword" class="form-control" #password>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login(username,password)">Login</button>
+        </div>
+    </div>
+</div>
