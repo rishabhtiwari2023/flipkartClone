@@ -1,10 +1,25 @@
-<div class="Dynamic d-flex flex-row">
+<!-- <div class="Dynamic d-flex flex-row">
   <div class="menuBar"><app-menu (notify)="ParentMethod($event)"></app-menu></div>
   <div class="otherComponent"><ng-container *ngComponentOutlet="say"></ng-container></div>
 </div>
+ -->
 
+<a routerLink="/app-login" routerLinkActive="active" arialCurrentWhenActive="page">my link 1</a>
+<router-outlet></router-outlet>
+<!-- <app-login></app-login> -->
+<!-- <app-header></app-header>
 
+<app-sidenav></app-sidenav>
 
+<mat-drawer-container>
+  <mat-drawer mode="side" opened="true">
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container> -->
 <!-- <button (click)="About()">about</button>
 <button (click)="Student()">student dta</button> -->
 <!-- <ng-container #container></ng-container>  -->

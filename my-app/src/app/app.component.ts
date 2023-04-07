@@ -1,12 +1,15 @@
 import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { StudentDataComponent } from './student-data/student-data.component'
+// import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private route: Router) { }
   // @ViewChild('container', { read: ViewContainerRef, static: true })
   // container!: ViewContainerRef;
   // title = 'my-app';
